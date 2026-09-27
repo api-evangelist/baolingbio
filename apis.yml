@@ -1,23 +1,54 @@
 aid: baolingbio
+
 name: Baolingbio
-description: 'Baolingbio is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Baolingbio (also known as Baolingbao Biology Co., Ltd.) is a high‑tech Chinese enterprise specializing in the research, development, manufacturing and service of bio‑polysaccharides and functional sugars. It offers a broad portfolio of novel sweeteners, prebiotics, dietary fibers and starch‑based ingredients for food, beverage, nutrition and health industries worldwide, emphasizing quality, sustainability and global logistics.'
+
 url: https://raw.githubusercontent.com/api-evangelist/baolingbio/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Biotechnology
+- Food Ingredients
+- Sweeteners
+- China
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/baolingbio-hosts.yml
+- type: Vendors
+  url: vendors/baolingbio-vendors.yml
+- type: DomainSecurity
+  url: security/baolingbio-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/baolingbio
+
+- type: Website
+  url: https://www.baolingbao-biology.com
+
+apis: []
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
